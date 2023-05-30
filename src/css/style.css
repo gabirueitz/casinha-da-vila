@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Schoolbell&display=swap');
+
+:root {
+    --color1: #ffffff;
+    --color2: #92A8D1;
+    --color3: #6b5b95;
+    --color4: #D95366;
+    --color5: #F5DA71;
+    --color6: #0F8A66;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav {
+    font-family: 'Schoolbell', "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+p:not(.index) {
+    font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
+    text-indent: 40px;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+nav {
+    font-size: 20px;
+    color: var(--color1);
+    background-color: var(--color2);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav {
+    padding-left: 15px;
+    gap: 25px;
+}
+
+.nav a,
+.social a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.nav a:visited,
+.social a:visited {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.nav a:hover,
+.social a:hover {
+    color: var(--color5);
+}
+
+.social {
+    font-size: 30px;
+    gap: 15px;
+    padding-right: 15px;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main:not(.index) {
+    padding: 20px 0;
+    background-size: cover;
+}
+
+h1:not(#slogan) {
+    font-size: 44px;
+    color: var(--color1);
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 75%;
+    background-image: url(../images/card_back.gif);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#logo {
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    width: 220px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50px;
+    padding: 15px;
+}
+
+#slogan {
+    text-align: center;
+    position: absolute;
+    top: 320px;
+    right: 60px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.carrossel img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 350px;
+}
+
+.cards {
+    font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    top: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.cards section {
+    text-align: center;
+    color: var(--color1);
+    width: 300px;
+    background-image: url(../images/card_back.gif);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+cards h2 {
+    font-size: 42px;
+}
+
+.card_icon {
+    width: 100px;
+}
+
+article {
+    font-size: 20px;
+    color: var(--color1);
+    text-align: justify;
+    margin: 20px auto;
+    width: 75%;
+    background-image: url(../images/card_back.gif);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.equipe {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.equipe article {
+    max-width: 44%;
+}
+
+.equipe h3 {
+    text-align: center;
+}
+
+.equipe img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inspiracoes img {
+    float: left;
+    margin: 0px 15px 1px 0px;
+}
+
+.form {
+    font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
+    color: var(--color1);
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    background-image: url(../images/card_back.gif);
+    border-radius: 25px;
+    padding: 15px;
+    border-top: 200px;
+    margin: auto;
+}
+
+input {
+    width: 80%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--color2);
+    border-radius: 5px;
+    background-color: var(--color1);
+}
+
+textarea {
+    width: 80%;
+    height: 180px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--color2);
+    border-radius: 5px;
+    background-color: var(--color1);
+    resize: none;
+}
+
+input[type=submit] {
+    width: 60%;
+    height: 60px;
+    font-size: 22px;
+    font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
+    color: var(--color3);
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
+    color: var(--color3);
+}
+
+input:hover,
+textarea:hover {
+    border: 2px solid var(--color5);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: var(--color1);
+    background-color: var(--color6);
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
