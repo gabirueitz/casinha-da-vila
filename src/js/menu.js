@@ -1,8 +1,8 @@
-function activeMenu() {
+function ativaMenu() {
     var x = document.getElementById("nav");
     if (x.className === "nav") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "nav";
+        x.className = "nav";
     }
-  }
+}

@@ -173,7 +173,7 @@ article {
 .equipe {
     margin: 0 auto;
     padding: 0px 10px;
-    max-width: 75%;
+    max-width: 74%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -288,6 +288,10 @@ p.footer {
     .nav {
         display: none;
         flex-direction: column;
+    }
+
+    .social {
+        padding: 0;
     }
 
     header .icon {
