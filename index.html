@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href=".src/css/slides.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./src/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
@@ -46,9 +47,30 @@
         <img src="./src/images/logo.gif" id="logo">
         <h1 id="slogan">Aqui nós brincamos<br>e aprendemos!</h1>
 
-        <div class="carrossel">
-            <img src="https://picsum.photos/1200/500">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="slides fade">
+                <img src="slide1.jpg" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="slide2.jpg" style="width:100%">
+            </div>
+
+            <div class="slides">
+                <img src="slide3.jpg" style="width:100%">
+            </div>
+
+            <div class="slides">
+                <img src="slide4.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br>
 
         <div class="cards">
             <section>
