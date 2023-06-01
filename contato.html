@@ -18,7 +18,10 @@
 <body>
     <header>
         <nav>
-            <ul class="nav">
+            <a href="javascript:void(0);" class="icon" onclick="ativaMenu()">
+                <i class="fa fa-bars"></i></a>
+
+            <ul class="nav" id="nav">
                 <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li><a href="espaco.html"><i class="fa-solid fa-tree"></i> Nosso Espaço</a></li>
                 <li><a href="equipe.html"><i class="fa-solid fa-people-group"></i> Nossa Equipe</a></li>
@@ -42,25 +45,25 @@
         <div class="form">
             <h2>Alguma dúvida? Mande-nos um e-mail:</h2>
             <br>
-            <action="mailto:roger.gabiru@gmail.com" method=”POST” enctype=”text/plain” name=”EmailForm”>
+            <form method=”POST” enctype=”text/plain” name=”EmailForm”>
                 <input type="text" name="name" id="name" placeholder="Nome Completo">
                 <input type="email" name="email" id="email" placeholder="e-mail">
                 <input type="tel" name="phone" id="phone" placeholder="Celular ou Telefone">
                 <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Escreva à vontade!"></textarea>
                 <br><br>
                 <input type="submit" value="Enviar!">
-                </form>
+            </form>
         </div>
     </main>
     <footer>
-        <p><strong>Endereço:</strong> R. Luiz Barbosa de Campos, 525 - Jardim Alvorada, São Carlos - SP, CEP. 13562-330
+        <p class="footer"><strong>Endereço:</strong> R. Luiz Barbosa de Campos, 525 - Jardim Alvorada, São Carlos - SP
         </p>
-        <p><strong>Telefone:</strong> (16) 99729-5931</p>
+        <p class="footer"><strong>Telefone:</strong> (16) 99729-5931</p>
     </footer>
     <script src="https://kit.fontawesome.com/01778cdb45.js" crossorigin="anonymous"></script>
 
-    <script
-        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+    <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=fir1oizu&n=n1.ratufa.io"></script>
+    <script src="./src/js/menu.js"></script>
 </body>
 
 </html>
