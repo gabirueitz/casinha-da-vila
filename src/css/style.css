@@ -139,7 +139,7 @@ h1:not(#slogan) {
     top: 500px;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 0 auto 60px auto;
 }
 
 .cards section {
