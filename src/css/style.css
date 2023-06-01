@@ -47,19 +47,22 @@ nav ul {
 }
 
 .nav a,
-.social a {
+.social a,
+nav .icon a {
     text-decoration: none;
     color: var(--color1);
 }
 
 .nav a:visited,
-.social a:visited {
+.social a:visited,
+nav .icon a:visited {
     text-decoration: none;
     color: var(--color1);
 }
 
 .nav a:hover,
-.social a:hover {
+.social a:hover,
+nav .icon a:hover {
     color: var(--color5);
 }
 
@@ -69,15 +72,20 @@ nav ul {
     padding-right: 15px;
 }
 
+header .icon {
+    display: none;
+    font-size: 30px;
+}
+
 body {
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background.gif);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main:not(.index) {
     padding: 20px 0;
-    background-size: cover;
 }
 
 h1:not(#slogan) {
@@ -95,9 +103,9 @@ h1:not(#slogan) {
 #logo {
     text-align: center;
     position: absolute;
-    top: 80px;
-    left: 60px;
-    width: 220px;
+    top: 10vh;
+    left: 5vw;
+    max-width: 220px;
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 50px;
     padding: 15px;
@@ -106,18 +114,19 @@ h1:not(#slogan) {
 #slogan {
     text-align: center;
     position: absolute;
-    top: 320px;
-    right: 60px;
+    top: 40vh;
+    right: 2vw;
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 50px;
     padding: 15px;
 }
 
 .carrossel img {
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 350px;
+    padding-bottom: 50vh;
 }
 
 .cards {
@@ -155,18 +164,23 @@ article {
     color: var(--color1);
     text-align: justify;
     margin: 20px auto;
-    width: 75%;
+    width: 70%;
     background-image: url(../images/card_back.gif);
     border-radius: 25px;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .equipe {
     margin: 0 auto;
-    max-width: 80%;
+    padding: 0px 10px;
+    max-width: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.equipe img {
+    width: 60%;
 }
 
 .equipe article {
@@ -229,11 +243,13 @@ input[type=submit] {
     font-size: 22px;
     font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
     color: var(--color3);
+    margin-bottom: 30px;
 }
 
 input::placeholder,
 textarea::placeholder {
     font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
+    font: 16px;
     color: var(--color3);
 }
 
@@ -246,11 +262,88 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 14px;
     color: var(--color1);
-    background-color: var(--color6);
-    height: 35px;
+    background-image: url(../images/footer.gif);
+    height: 59px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+p.footer {
+    font-size: 14px;
+    font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
+    text-indent: 0px;
+    display: block;
+    padding: 0px 20px;
+}
+
+@media only screen and (max-width: 850px) {
+    nav {
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    header .icon {
+        color: var(--color1);
+        display: block;
+        position: relative;
+        padding-right: 50px;
+    }
+
+    .carrossel img {
+        display: none;
+        padding: 0;
+    }
+
+    #logo,
+    #slogan {
+        position: relative;
+        top: 5px;
+        max-width: 70%;
+        margin: auto auto 15px auto;
+    }
+
+    .cards {
+        gap: 15px;
+        position: relative;
+        top: 0px;
+        margin-bottom: 60px;
+    }
+
+    .equipe article {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .equipe img {
+        width: 90%;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    p.footer {
+        display: none;
+    }
+
+    .responsive {
+        display: block;
+        z-index: 1000;
+        background-color: var(--color2);
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px 20px;
+        gap: 10px;
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        text-align: left;
+    }
 }
