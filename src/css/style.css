@@ -17,9 +17,8 @@ nav {
     font-family: 'Schoolbell', "Comic Sans MS", "Comic Sans", sans-serif;
 }
 
-p:not(.index) {
+p {
     font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
-    text-indent: 40px;
 }
 
 body {
@@ -130,7 +129,6 @@ h1:not(#slogan) {
 }
 
 .cards {
-    font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -173,7 +171,7 @@ article {
 .equipe {
     margin: 0 auto;
     padding: 0px 10px;
-    max-width: 74%;
+    width: 74%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -184,7 +182,7 @@ article {
 }
 
 .equipe article {
-    max-width: 44%;
+    width: 42%;
 }
 
 .equipe h3 {
@@ -198,8 +196,9 @@ article {
 }
 
 .inspiracoes img {
+    max-width: 300;
     float: left;
-    margin: 0px 15px 1px 0px;
+    margin: 10px 20px 1px 0px;
 }
 
 .form {
@@ -322,12 +321,17 @@ p.footer {
     }
 
     .equipe article {
-        max-width: 100%;
+        width: 100%;
         text-align: center;
     }
 
     .equipe img {
         width: 90%;
+    }
+
+    .inspiracoes img {
+        width: 100%;
+        margin: 0px 0px 10px 0px;
     }
 
     .form {
