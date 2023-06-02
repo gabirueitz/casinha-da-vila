@@ -102,9 +102,10 @@ h1:not(#slogan) {
 #logo {
     text-align: center;
     position: absolute;
+    z-index: 900;
     top: 10vh;
     left: 5vw;
-    max-width: 220px;
+    max-width: 240px;
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 50px;
     padding: 15px;
@@ -113,19 +114,12 @@ h1:not(#slogan) {
 #slogan {
     text-align: center;
     position: absolute;
-    top: 40vh;
+    z-index: 900;
+    top: 60vh;
     right: 2vw;
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 50px;
     padding: 15px;
-}
-
-.carrossel img {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50vh;
 }
 
 .cards {
@@ -134,7 +128,7 @@ h1:not(#slogan) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    top: 500px;
+    top: 640px;
     left: 0;
     right: 0;
     margin: 0 auto 60px auto;
@@ -300,7 +294,7 @@ p.footer {
         padding-right: 50px;
     }
 
-    .carrossel img {
+    .slideshow-container {
         display: none;
         padding: 0;
     }
