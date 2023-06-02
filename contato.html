@@ -45,11 +45,12 @@
         <div class="form">
             <h2>Alguma dúvida? Mande-nos um e-mail:</h2>
             <br>
-            <form method=”POST” enctype=”text/plain” name=”EmailForm”>
-                <input type="text" name="name" id="name" placeholder="Nome Completo">
-                <input type="email" name="email" id="email" placeholder="e-mail">
-                <input type="tel" name="phone" id="phone" placeholder="Celular ou Telefone">
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Escreva à vontade!"></textarea>
+            <form method=”POST” enctype=”text/plain” name=”EmailForm” required>
+                <input type="text" name="name" id="name" placeholder="Nome Completo" required>
+                <input type="email" name="email" id="email" placeholder="e-mail" required>
+                <input type="tel" name="phone" id="phone" placeholder="Celular ou Telefone" required>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Escreva à vontade!"
+                    required></textarea>
                 <br><br>
                 <input type="submit" value="Enviar!">
             </form>
