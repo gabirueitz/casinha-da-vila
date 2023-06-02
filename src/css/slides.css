@@ -5,7 +5,7 @@
 .slideshow-container {
     max-width: 1200px;
     position: relative;
-    margin: auto;
+    margin: 0 auto 400px auto;
 }
 
 .slides {
