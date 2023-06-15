@@ -173,6 +173,7 @@ article {
 
 .equipe img {
     width: 60%;
+    border-radius: 50%;
 }
 
 .equipe article {
@@ -190,9 +191,27 @@ article {
 }
 
 .inspiracoes img {
-    max-width: 300;
+    max-width: 250px;
     float: left;
     margin: 10px 20px 1px 0px;
+    border-radius: 50%;
+}
+
+.inspiracoes a,
+.equipe a {
+    text-decoration: none;
+    color: var(--color5);
+}
+
+.inspiracoes a:visited,
+.equipe a:visited {
+    color: var(--color5);
+    ;
+}
+
+.inspiracoes a:hover,
+.equipe a:hover {
+    color: var(--color4);
 }
 
 .form {
@@ -260,7 +279,6 @@ footer {
     height: 59px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
 }
 
 p.footer {
@@ -268,84 +286,5 @@ p.footer {
     font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
     text-indent: 0px;
     display: block;
-    padding: 0px 20px;
-}
-
-@media only screen and (max-width: 850px) {
-    nav {
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-
-    .nav {
-        display: none;
-        flex-direction: column;
-    }
-
-    .social {
-        padding: 0;
-    }
-
-    header .icon {
-        color: var(--color1);
-        display: block;
-        position: relative;
-        padding-right: 50px;
-    }
-
-    .slideshow-container {
-        display: none;
-        padding: 0;
-    }
-
-    #logo,
-    #slogan {
-        position: relative;
-        top: 5px;
-        max-width: 70%;
-        margin: auto auto 15px auto;
-    }
-
-    .cards {
-        gap: 15px;
-        position: relative;
-        top: 0px;
-        margin-bottom: 60px;
-    }
-
-    .equipe article {
-        width: 100%;
-        text-align: center;
-    }
-
-    .equipe img {
-        width: 90%;
-    }
-
-    .inspiracoes img {
-        width: 100%;
-        margin: 0px 0px 10px 0px;
-    }
-
-    .form {
-        width: 90%;
-    }
-
-    p.footer {
-        display: none;
-    }
-
-    .responsive {
-        display: block;
-        z-index: 1000;
-        background-color: var(--color2);
-        border-radius: 0px 0px 20px 20px;
-        padding: 10px 20px;
-        gap: 10px;
-        position: absolute;
-        top: 20px;
-        left: 0px;
-        text-align: left;
-    }
+    padding: 15px 20px 10px 20px;
 }
