@@ -40,8 +40,8 @@
     #logo,
     #slogan {
         position: relative;
-        top: 5px;
-        max-width: 70%;
+        top: 10px;
+        max-width: 60%;
         margin: auto auto 15px auto;
     }
 
@@ -62,8 +62,9 @@
     }
 
     .inspiracoes img {
+        float: none;
         width: 100%;
-        margin: 0px 0px 10px 0px;
+        margin: 5px 0 10px 0;
     }
 
     .form {
@@ -74,16 +75,22 @@
         display: none;
     }
 
+    .resumo-endereco {
+        display: block;
+    }
+
     .responsive {
+        position: absolute;
         display: block;
         z-index: 1000;
         background-color: var(--color2);
-        border-radius: 0px 0px 20px 20px;
+        border-radius: 0px 0px 15px 15px;
         padding: 10px 20px;
-        gap: 10px;
-        position: absolute;
         top: 20px;
         left: 0px;
         text-align: left;
+        line-height: 2;
     }
+
+
 }
