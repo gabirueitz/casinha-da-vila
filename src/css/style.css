@@ -194,7 +194,7 @@ article {
     max-width: 250px;
     float: left;
     margin: 10px 20px 1px 0px;
-    border-radius: 50%;
+    border-radius: 50% 50% 0% 50%;
 }
 
 .inspiracoes a,
