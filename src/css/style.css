@@ -41,7 +41,7 @@ nav ul {
 }
 
 .nav {
-    font-size: clamp(0.4em, 0.4em + 10vw, 1em);
+    font-size: clamp(0.5em, 0.5em + 10vw, 1em);
     padding-left: 15px;
     gap: 25px;
 }
@@ -113,6 +113,7 @@ h1:not(#slogan) {
 }
 
 #slogan {
+    font-size: clamp(1.2em, 1.2em + 1vw, 2.2em);
     text-align: center;
     position: absolute;
     z-index: 900;
@@ -136,7 +137,7 @@ h1:not(#slogan) {
 }
 
 .cards section {
-    font-size: clamp(0.4em, 0.4em + 10vw, 0.8em);
+    font-size: clamp(0.5em, 0.5em + 10vw, 0.8em);
     text-align: center;
     color: var(--color1);
     width: 300px;
@@ -154,7 +155,7 @@ cards h2 {
 }
 
 article {
-    font-size: clamp(0.4em, 0.4em + 1vw, 1em);
+    font-size: clamp(0.5em, 0.5em + 1vw, 1em);
     color: var(--color1);
     text-align: justify;
     text-indent: 2em;

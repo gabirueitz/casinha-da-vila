@@ -3,7 +3,7 @@
     color: var(--color1);
     text-align: center;
     width: 500px;
-    height: 600px;
+    min-height: 600px;
     background-image: url(../images/card_back.gif);
     border-radius: 25px;
     padding: 15px;
