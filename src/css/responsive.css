@@ -33,18 +33,34 @@
     }
 
     .slideshow-container {
-        display: none;
         padding: 0;
+        max-width: 95%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .slideshow-container img {
+        border-radius: 10px;
     }
 
     #logo,
     #slogan {
         position: relative;
-        top: 10px;
-        max-width: 60%;
-        margin: auto auto 15px auto;
+        top: 0;
     }
 
+    #logo {
+        left: 5px;
+        max-width: 35%;
+        transform: translateY(30%);
+    }
+
+    #slogan {
+        right: 5px;
+        width: fit-content;
+        margin: 0 0 0 auto;
+        transform: translateY(-50%);
+    }
 
     .cards {
         gap: 15px;
@@ -57,8 +73,8 @@
         width: 82%;
     }
 
-    article {
-        text-indent: 0em;
+    article p {
+        text-indent: 2em;
     }
 
     .equipe article {
