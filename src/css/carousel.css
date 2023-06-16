@@ -1,0 +1,114 @@
+:root {
+    --color1: #ffffff;
+    --color2: #92A8D1;
+    --color3: #6b5b95;
+    --color4: #D95366;
+    --color5: #F5DA71;
+    --color6: #0F8A66;
+}
+
+.slider {
+    margin: 20px auto;
+    width: 95%;
+}
+
+.slider input {
+    display: none;
+}
+
+
+.photos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 55vh;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.photos .item {
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.4s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.item img {
+    width: 400px;
+    border: 5px solid var(--color1);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots label {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--color3);
+    margin: 10px;
+    transition-duration: 0.2s;
+}
+
+#t-1:checked~.dots label[for="t-1"],
+#t-2:checked~.dots label[for="t-2"],
+#t-3:checked~.dots label[for="t-3"],
+#t-4:checked~.dots label[for="t-4"],
+#t-5:checked~.dots label[for="t-5"],
+#t-6:checked~.dots label[for="t-6"],
+#t-7:checked~.dots label[for="t-7"] {
+    transform: scale(2);
+    background-color: var(--color5);
+    box-shadow: 0px 0px 0px 3px #dddddd24;
+}
+
+#t-1:checked~.photos label[for="t-3"],
+#t-2:checked~.photos label[for="t-4"],
+#t-3:checked~.photos label[for="t-5"],
+#t-4:checked~.photos label[for="t-1"],
+#t-5:checked~.photos label[for="t-2"] {
+    transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+    z-index: 2;
+}
+
+#t-1:checked~.photos label[for="t-2"],
+#t-2:checked~.photos label[for="t-3"],
+#t-3:checked~.photos label[for="t-4"],
+#t-4:checked~.photos label[for="t-5"],
+#t-5:checked~.photos label[for="t-1"] {
+    transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+    z-index: 3;
+}
+
+#t-2:checked~.photos label[for="t-1"],
+#t-3:checked~.photos label[for="t-2"],
+#t-4:checked~.photos label[for="t-3"],
+#t-5:checked~.photos label[for="t-4"],
+#t-1:checked~.photos label[for="t-5"] {
+    transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+    z-index: 3;
+}
+
+#t-3:checked~.photos label[for="t-1"],
+#t-4:checked~.photos label[for="t-2"],
+#t-5:checked~.photos label[for="t-3"],
+#t-2:checked~.photos label[for="t-5"],
+#t-1:checked~.photos label[for="t-4"] {
+    transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+
+#t-1:checked~.photos label[for="t-1"],
+#t-2:checked~.photos label[for="t-2"],
+#t-3:checked~.photos label[for="t-3"],
+#t-4:checked~.photos label[for="t-4"],
+#t-5:checked~.photos label[for="t-4"],
+#t-5:checked~.photos label[for="t-5"] {
+    z-index: 4;
+}

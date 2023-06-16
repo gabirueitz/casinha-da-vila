@@ -16,35 +16,75 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/carousel.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./src/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon-16x16.png">
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script src="./src/js/header-footer.js"></script>
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./src/js/header-footer.js"></script>
 </head>
 
 <body>
     <div id="header"></div>
-    
+
     <main>
         <h1>Nosso Espaço</h1>
-        <article>
+
+        <div class="slider">
+            <input type="radio" name="photo" id="t-1">
+            <input type="radio" name="photo" id="t-2">
+            <input type="radio" name="photo" id="t-3" checked>
+            <input type="radio" name="photo" id="t-4">
+            <input type="radio" name="photo" id="t-5">
+
+            <div class="photos">
+                <label class="item" for="t-1">
+                    <img src="./src/espaco/bercario.jpg" alt="Sala berçário">
+                </label>
+                <label class="item" for="t-2">
+                    <img src="./src/espaco/nao-estruturados.jpg" alt="Espaço de materiais não-estruturados">
+                </label>
+                <label class="item" for="t-3">
+                    <img src="./src/espaco/quintal1.jpg" alt="Caixa de areia">
+                </label>
+                <label class="item" for="t-4">
+                    <img src="./src/espaco/quintal2.jpg" alt="Quintal">
+                </label>
+                <label class="item" for="t-5">
+                    <img src="./src/espaco/recepcao.jpg" alt="Recepção">
+                </label>
+            </div>
+            <br />
+            <div class="dots">
+                <label for="t-1"></label>
+                <label for="t-2"></label>
+                <label for="t-3"></label>
+                <label for="t-4"></label>
+                <label for="t-5"></label>
+            </div>
+        </div>
+
+        <article class="espaco">
             <p>Fundada em 2021 por Sulamita Ferreira da Silva, a Casinha da vila atua como um espaço recreativo
-                educacional que tem como cerne a educação com afeto.</p>
-
-            <p>A Casinha da vila foi idealizada para ser uma extensão dos lares das crianças e para atuar como rede de
-                apoio para aquelas famílias que precisam de auxilio com seus pequenos aos finais de semana e horários
-                noturnos, além do mais, a tia Sula sonhava em criar um lugar onde as crianças pudessem aprender de forma
-                ativa, construtiva e, acima de tudo, repleta de afeto.</p>
-
+                educacional que tem como cerne a educação com afeto. A Casinha da vila foi idealizada para ser uma
+                extensão dos lares das crianças e para atuar como rede de apoio para aquelas famílias que precisam de
+                auxilio com seus pequenos aos finais de semana e horários noturnos, além do mais, a tia Sula sonhava em
+                criar um lugar onde as crianças pudessem aprender de forma ativa, construtiva e, acima de tudo, repleta
+                de afeto.</p>
             <p>Com muito esforço e dedicação, a Casinha da Vila foi tomando forma, tornando-se um espaço acolhedor.
                 Hoje somos uma espaço educacional abrigado em uma casa com 350 m<sup>2</sup> e um jardim de 300
                 m<sup>2</sup> repleto de arbustos, flores, pássaros e muita imaginação. Acreditando no poder da natureza
                 para estimular a aprendizagem, nossas atividades são em grande maioria ao ar livre onde as crianças
                 podem explorar, criar e interagir com o ambiente.</p>
+
+            <div class="column3">
+                <img src="./src/espaco/cozinha.jpg" alt="Cozinha">
+                <img src="./src/espaco/refeitorio.jpg" alt="Refeitorio">
+                <img src="./src/espaco/banheiro.jpg" alt="Banheiro">
+            </div>
 
             <p>No nosso espaço, as metodologias ativas e construtivistas são a base de todo o trabalho realizado. As
                 crianças são incentivadas a serem protagonistas de seu próprio aprendizado, guiadas por professores que
@@ -57,11 +97,15 @@
                 emoções das crianças são valorizadas, criando um ambiente seguro onde elas possam sentir-se à vontade
                 para expressar seus sentimentos e experiências.</p>
 
+            <div class="lines2">
+                <img src="./src/espaco/atividades1.jpg" alt="Sala de atividades" class="imgAtv1">
+                <img src="./src/espaco/atividades2.jpg" alt="Sala de atividades" class="imgAtv2">
+            </div>
+
             <p>As atividades direcionadas sempre são planejadas de forma a despertar a curiosidade e a criatividade das
                 crianças. A cada dia, as crianças se envolvem ativamente em diferentes projetos, como, criação e
                 contação de histórias, experimentos científicos e até mesmo os cuidados com a nossa mascote, Pipokinha.
-            </p>
-            <p>Além disso, a <strog>Casinha da Vila</strog> busca promover momentos de integração entre o espaço as
+                Além disso, a <strog>Casinha da Vila</strog> busca promover momentos de integração entre o espaço as
                 famílias, buscando sempre que necessário um momento de troca de experiências, de fortalecimento dos
                 laços familiares e de construção de uma comunidade educativa.</p>
 
@@ -71,7 +115,7 @@
             </p>
         </article>
     </main>
- 
+
     <div id="footer"></div>
 
     <script src="https://kit.fontawesome.com/01778cdb45.js" crossorigin="anonymous"></script>

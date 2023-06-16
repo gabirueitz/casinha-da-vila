@@ -22,11 +22,11 @@ p {
 }
 
 body {
+    font-size: 20px;
     background-color: var(--color1);
 }
 
 nav {
-    font-size: 20px;
     color: var(--color1);
     background-color: var(--color2);
     height: 50px;
@@ -41,6 +41,7 @@ nav ul {
 }
 
 .nav {
+    font-size: clamp(0.4em, 0.4em + 10vw, 1em);
     padding-left: 15px;
     gap: 25px;
 }
@@ -88,7 +89,7 @@ main:not(.index) {
 }
 
 h1:not(#slogan) {
-    font-size: 44px;
+    font-size: 2.2em;
     color: var(--color1);
     text-align: center;
     display: block;
@@ -135,6 +136,7 @@ h1:not(#slogan) {
 }
 
 .cards section {
+    font-size: clamp(0.4em, 0.4em + 10vw, 0.8em);
     text-align: center;
     color: var(--color1);
     width: 300px;
@@ -144,7 +146,7 @@ h1:not(#slogan) {
 }
 
 cards h2 {
-    font-size: 42px;
+    font-size: 2.2em;
 }
 
 .card_icon {
@@ -152,14 +154,45 @@ cards h2 {
 }
 
 article {
-    font-size: 20px;
+    font-size: clamp(0.4em, 0.4em + 1vw, 1em);
     color: var(--color1);
     text-align: justify;
+    text-indent: 2em;
     margin: 20px auto;
     width: 70%;
     background-image: url(../images/card_back.gif);
     border-radius: 25px;
     padding: 20px 30px;
+}
+
+.column3 {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.column3 img {
+    width: 300px;
+    border-radius: 5% 50% 5% 50%;
+}
+
+.lines2 {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.lines2 img {
+    max-height: 300px;
+    border-radius: 25px 100px 25px 100px;
+}
+
+.imgAtv1 {
+    max-width: 100%;
 }
 
 .equipe {
@@ -226,13 +259,13 @@ footer {
 }
 
 p.footer {
-    font-size: 14px;
+    font-size: 0.7em;
     font-family: 'Carter', "Comic Sans MS", "Comic Sans", sans-serif;
     padding: 15px 20px 10px 20px;
 }
 
 .resumo-endereco {
-    font-size: 12px;
+    font-size: 0.6em;
     display: none;
     margin: 30px auto;
 }
