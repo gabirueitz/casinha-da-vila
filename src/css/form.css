@@ -33,7 +33,7 @@ textarea {
     resize: none;
 }
 
-input[type=submit] {
+button {
     width: 60%;
     height: 60px;
     font-size: 22px;

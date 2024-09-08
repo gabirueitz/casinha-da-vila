@@ -10,28 +10,6 @@
 }
 
 @media only screen and (max-width: 850px) {
-    nav {
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-
-    .nav {
-        display: none;
-        flex-direction: column;
-    }
-
-    .social {
-        padding: 0;
-    }
-
-    header .icon {
-        color: var(--color1);
-        display: block;
-        position: relative;
-        padding-right: 50px;
-    }
-
     .slideshow-container {
         padding: 0;
         max-width: 95%;
@@ -115,5 +93,29 @@
         left: 0px;
         text-align: left;
         line-height: 2;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    nav {
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    .social {
+        padding: 0;
+    }
+
+    header .icon {
+        color: var(--color1);
+        display: block;
+        position: relative;
+        padding-right: 50px;
     }
 }

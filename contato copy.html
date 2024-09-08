@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Casinha da Vila</title>
+		<meta
+			name="description"
+			content="Casinha da Vila: Um lar acolhedor e divertido para crianças. Aprendizado ativo ao ar livre, com metodologias construtivistas. Um lugar de afeto, diversão e aprendizagem." />
+		<meta name="robots" content="index" />
+		<meta name="author" content="Roger Gonçalves" />
+		<meta
+			name="keywords"
+			content="escola infantil, recreação, colônia de férias, day-use, brincadeira, desenvolvimento,  educação infantil" />
+
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/form.css" />
+		<link rel="stylesheet" href="./src/css/responsive.css" />
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./src/images/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./src/images/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./src/images/favicon-16x16.png" />
+
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous"></script>
+		<script src="./src/js/header-footer.js"></script>
+	</head>
+
+	<body>
+		<div id="header"></div>
+
+		<main id="form">
+			<div class="form">
+				<h2>Alguma dúvida? Mande-nos uma mensagem:</h2>
+				<br />
+				<form action="">
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Nome Completo"
+						required />
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="e-mail"
+						required />
+					<input
+						type="tel"
+						name="phone"
+						id="phone"
+						placeholder="Celular ou Telefone"
+						required />
+					<textarea
+						name="message"
+						id="message"
+						cols="30"
+						rows="10"
+						placeholder="Escreva aqui sua mensagem!"
+						required></textarea>
+					<br /><br />
+					<button onclick="sendToWhatsapp()">Enviar!</button>
+				</form>
+			</div>
+		</main>
+
+		<div id="footer"></div>
+
+		<script
+			src="https://kit.fontawesome.com/01778cdb45.js"
+			crossorigin="anonymous"></script>
+		<script src="./src/js/menu.js"></script>
+		<script src="./src/js/whatsapp.js"></script>
+	</body>
+</html>
