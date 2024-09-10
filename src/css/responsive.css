@@ -9,6 +9,19 @@
     --color6: #0F8A66;
 }
 
+header nav .responsive {
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    background-color: var(--color2);
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px 20px;
+    top: 20px;
+    left: 2px;
+    text-align: left;
+    line-height: 2;
+}
+
 @media only screen and (max-width: 850px) {
     .slideshow-container {
         padding: 0;
@@ -80,19 +93,6 @@
 
     .resumo-endereco {
         display: block;
-    }
-
-    .responsive {
-        position: absolute;
-        display: block;
-        z-index: 1000;
-        background-color: var(--color2);
-        border-radius: 0px 0px 15px 15px;
-        padding: 10px 20px;
-        top: 20px;
-        left: 0px;
-        text-align: left;
-        line-height: 2;
     }
 }
 
